@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div `
     width: 100%;
+    
     height: 100vh;
     display:flex;
     align-items: center;
@@ -9,14 +10,19 @@ export const Container = styled.div `
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 
+    .element-dad{
+        width:800px;
+    }
      div {
             
             height: 510px;
+            width:420px;
             padding:2px;
             margin: 0 auto;
             display:flex;
-            justify-content:space-bettewn;
+            
             background-color: white;
             border-radius: 30px;
 
@@ -25,7 +31,7 @@ export const Container = styled.div `
                 font-size: 40px;
                 margin-top:50px;
                 margin-left: -35px;
-                padding-bottom:10px;
+                padding-bottom:20px;
             }
 
             > span{
@@ -67,26 +73,49 @@ export const Container = styled.div `
                         font-size:10px;
                         font-weight:bold;
                         margin-left:-200px;
+                        align-self:start;
+                        margin-left:65px;
+                        margin-bottom:3px;
                     }
 
                     > input{
                         width:280px;
                         border-radius:6px;
-                        border: 1px solid #EDEDED;
+                        border: 1px solid black;
                         padding-left:15px;
-                        height:40px;
+                        height:45px;
+                        margin-bottom:15px;
+                    }
+
+                    > button{
+                        width:280px;
+                        border-radius:6px;
+                        border: none;
+                        color:white;
+                        font-weight:bold;
+                        background-color:#222743;
+                        padding-left:15px;
+                        height:45px;
+                        cursor:pointer;
+                    }
+
+                    >button:hover{
+                        background-color:#222733;
                     }
                 }
             }
 
              .div-image{
                 height:500px;
-
+                width:420px;
                 display: flex;
                 justify-content: center;
 
-                > img{
-                    margin: 10px;
+                > img {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-right: 0px;
+                    margin-left: 25px;                    
                 }
             }
         };

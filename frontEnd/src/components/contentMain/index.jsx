@@ -1,12 +1,12 @@
 import { Container } from "./style";
 import imgDesktop from "../../../../assets/images/imgDesktop.svg";
 import iconList  from "../../../../assets/images/icon-list.svg"
-
+import { SubscribeNewlestter } from "../../scripts/script";
 
 export function ContentMain(){
     return (
         <Container>
-             <div>
+             <div className="element-dad">
                 <div>
                     <div className="informations">
                         <h1>Stay updated!</h1>
@@ -29,7 +29,7 @@ export function ContentMain(){
                         <label htmlFor="input-email">Email adress</label>
                         <input id="input-email" type="text" placeholder="email@company.com"/>
 
-                        <button>Subscribe to monthly newsletter</button>
+                        <button id="buttonSubscibe" onClick={SubscribeNewlestter}>Subscribe to monthly newsletter</button>
                     </div>
 
                 </div>
