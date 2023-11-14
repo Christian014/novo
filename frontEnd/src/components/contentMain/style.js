@@ -1,6 +1,37 @@
 import styled from "styled-components";
 
 export const Container = styled.div `
+
+
+
+
+    
+    @media (max-width: 400px){
+        background-color:white;
+
+        > .element-dad{
+
+            display: flex;
+            flex-direction: column-reverse;
+            overflow-x: overlay;
+            
+            > .div-image img{
+                width:100%;
+                margin:0;
+                padding:0;
+            }
+    
+             .div-image{
+                width:100%;
+            }
+
+            >div:first-child{
+                width:100%;
+            }
+        }
+
+    }
+
     width: 100%;
     
     height: 100vh;
@@ -76,6 +107,16 @@ export const Container = styled.div `
                         align-self:start;
                         margin-left:65px;
                         margin-bottom:3px;
+                    }
+
+                    > p{
+                        color:red;
+                        font-size:10px;
+                        font-weight:bold;
+                        align-self:end;
+                        margin-bottom: -12px;
+                        margin-right: 70px;
+                        visibility: hidden;
                     }
 
                     > input{

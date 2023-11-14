@@ -25,7 +25,7 @@ export function ContentMain(){
                                 <img src={iconList} alt="" />And much more!
                             </li>
                         </ul>
-                    
+                        <p id="validEmailRequired">Valid Email Required</p>
                         <label htmlFor="input-email">Email adress</label>
                         <input id="input-email" type="text" placeholder="email@company.com"/>
 
