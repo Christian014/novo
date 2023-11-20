@@ -1,12 +1,11 @@
 
 
-
-
-
  export function SubscribeNewlestter(){
     document.getElementById("buttonSubscibe").addEventListener("click", () => {
         const emailValid = document.getElementById("validEmailRequired");
         const inputEmail = document.getElementById("input-email");
+        
+        
 
        const textEmailInput = inputEmail.value;
         
@@ -17,20 +16,25 @@
 
         console.log('O e-mail é válido.');
             emailValid.style.visibility = "hidden";
-            inputEmail.style.backgroundColor = "white"
-            inputEmail.style.border = "1px solid black"
+            inputEmail.style.backgroundColor = "white";
+            inputEmail.style.border = "1px solid black";
         
 
         } else if (emailParaValidar == ""){
             console.error('O e-mail é inválido.');
+
             emailValid.style.visibility = "visible";
-            inputEmail.style.backgroundColor = "#FEE8E6"
-            inputEmail.style.border = "1px solid red"
+            inputEmail.style.backgroundColor = "#FEE8E6";
+            inputEmail.style.border = "1px solid red";
+            inputEmail.placeholder = "ash#loremcompany.com";
+            
+
             
 
         }else{
           console.error('O e-mail está fora dos padrões');
             emailValid.style.visibility = "visible";
+            inputEmail.style.fontSize = "100px";
         }
     })
 
