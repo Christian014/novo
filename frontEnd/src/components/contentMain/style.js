@@ -128,6 +128,15 @@ export const Container = styled.div `
                         margin-bottom:15px;
                     }
 
+                     .placeholderError{
+                        margin-top:-60px;
+                        visibility:hidden;
+                    }
+                     .placeholderError::placeholder{
+                        color:red;
+
+                    }
+
                     > button{
                         width:280px;
                         border-radius:6px;

@@ -27,7 +27,14 @@ export function ContentMain(){
                         </ul>
                         <p id="validEmailRequired">Valid Email Required</p>
                         <label htmlFor="input-email">Email adress</label>
-                        <input id="input-email" type="text" placeholder= "email@company.com"/>
+                        <input id="input-email"
+                        type="text"
+                        placeholder= "email@company.com"/>
+
+                        <input className=" placeholderError"
+                        id="placeholderError"
+                        type="text"
+                        placeholder= "ash#loremcompany.com"/>
 
                         <button id="buttonSubscibe" onClick={SubscribeNewlestter}>Subscribe to monthly newsletter</button>
                     </div>
